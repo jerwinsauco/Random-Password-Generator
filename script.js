@@ -32,6 +32,9 @@ function generatePassword() {
   else if (length < 8 || length > 128) {
     length = prompt ("Password must be from 8-128 in length.")
   }
+  else if (length = characters) {
+    alert("Invalid Entry! Enter Desired Password Length");
+  }
   else {
     lowerCase = confirm("Include lowercase letters?");
     upperCase = confirm("Include uppercase letters?");
