@@ -25,7 +25,7 @@ function writePassword() {
 }
 
 function generatePassword() {
-  length = prompt("Enter Length of Password: min (8) to max (128). Numeric entry only accepted.");
+  length = prompt("Password Length Needed: min (8) to max (128).");
   if (!length) {
     alert("No input entered! Goodbye");
   }
@@ -35,7 +35,7 @@ function generatePassword() {
     alert("Use Numeric Number ONLY!");
   }
 
-  else if (length<8 || length>128) {
+  else if (length < 8 || length > 128) {
     length = prompt ("Password must be from 8 to 128 in length.")
   }
   else {
