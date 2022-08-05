@@ -21,20 +21,21 @@ body {
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
+  background-color: black;
 }
 
 header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: hsl(0, 0%, 100%);
 }
 
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
   border-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  box-shadow: rgba(17, 34, 133, 0.8) 0px 8px 8px 0px;
   color: hsl(206, 17%, 28%);
   font-size: 18px;
   margin: 0 auto; 
@@ -72,7 +73,7 @@ header {
   clear: both;
 }
 
-.btn {
+.btn, .clearBtn {
   border: none;
   background-color: black;
   border-radius: 5px;
@@ -90,7 +91,7 @@ header {
   transition: 0.4s;
 }
 
-.btn:hover {
+.btn:hover, .clearBtn:hover {
   background: #2e90ff;
   color: #fff;
 }

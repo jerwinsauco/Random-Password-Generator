@@ -22,22 +22,27 @@ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
+  
 }
+
+var clearTextVar = document.getElementById("clearText");
+clearTextVar.addEventListener("click", function() {
+  var passwordText = document.querySelector("#password");
+  passwordText.value = "";
+})
+
 
 function generatePassword() {
   length = prompt("Password Length Needed: min (8) to max (128).");
   if (!length) {
     alert("No input entered! Goodbye");
   }
-
   else if (isNaN(length)) {
     alert("Use Numeric Number ONLY!");
   }
-
   else if (length < 8 || length > 128) {
     length = prompt("Password must be from 8 to 128 in length.")
   }
-
   else {
     lowerCase = confirm("Include lowercase letters? Press OK if Yes. Cancel if No.");
     upperCase = confirm("Include uppercase letters? Press OK if Yes. Cancel if No.");
